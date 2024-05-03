@@ -1,0 +1,56 @@
+.home{
+    position: relative;
+    height: 100vh;
+    display: grid;
+    justify-content: left;
+    align-items: center;
+    padding-left: 30px;
+    width: 50%;
+}
+
+.title{
+    font-size: 12vh;
+    padding: 0px;
+    margin: 0px;
+    font-weight: 600;
+}
+
+.subtitle{
+    color: hsl(0, 0%, 50%);
+    font-size: 4vh;
+    padding: 0px;
+    margin-top: -2vh;
+    font-weight: 400;
+}
+
+.bio{
+    color: hsl(0, 0%, 90%);
+    padding: 0px;
+    margin-top: 4vh;
+    font-weight: 300;
+    font-size: large;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .home {
+        padding: 0;
+        padding-top: -10vh;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .title{
+        text-align: center;
+    }
+    
+    .subtitle{
+        text-align: center;
+    }
+    
+    .bio{
+        text-align: center;
+    }
+}
