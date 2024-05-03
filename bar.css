@@ -1,4 +1,4 @@
-@media only screen and (min-width: 601px) {
+@media (min-aspect-ratio: 10/9) {
     .bar{
         position: fixed;
         display: grid;
@@ -40,9 +40,8 @@
     }
 }  
 
-@media only screen and (max-width: 600px) {
+@media (max-aspect-ratio: 10/9) {
     .bar{
-        background-color: red;
         position: relative;
         align-items: center;
         justify-content: center;
