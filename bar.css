@@ -72,6 +72,7 @@
     }
     .bar-segment:hover {
         cursor: pointer;
+        color: rgb(142,192,124)
     }
 }
 
