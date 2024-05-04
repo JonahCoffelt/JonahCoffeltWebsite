@@ -51,21 +51,20 @@
     position: relative;
     padding-left: 2vw;
     background-color: hsl(0, 0%, 14%);
-    box-shadow: inset 0px 0px 8px hsl(0, 0%, 4%);
     border-radius: 10px;
     font-size: min(1.25vw, 2.25vh);
     font-family: Space Mono;
     cursor: default;
     -webkit-box-shadow:0px 0px 127px 3px rgba(142,192,124,0.15);
     -moz-box-shadow: 0px 0px 127px 3px rgba(142,192,124,0.15);
-    box-shadow: 0px 0px 127px 3px rgba(142,192,124,0.15);
+    box-shadow: 0px 0px 127px 3px rgba(142,192,124,0.15), inset 0px 0px 12px hsl(0, 0%, 4%);
     transition: all .5s;
 }
 
 .code-box:hover{
     -webkit-box-shadow:0px 0px 127px 10px rgba(142,192,124,0.24);
     -moz-box-shadow: 0px 0px 127px 10px rgba(142,192,124,0.24);
-    box-shadow: 0px 0px 127px 10px rgba(142,192,124,0.24);
+    box-shadow: 0px 0px 127px 10px rgba(142,192,124,0.24), inset 0px 0px 12px hsl(0, 0%, 4%);
 }
 
 @media (min-aspect-ratio: 10/9) {
