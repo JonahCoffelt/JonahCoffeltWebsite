@@ -5,7 +5,19 @@
     justify-content: left;
     align-items: center;
     padding-left: 30px;
-    width: 50%;
+    width: 80vw;
+    grid-template-columns: 1fr 1fr;
+}
+
+.home-text{
+    width: 100%;
+}
+
+.home-info{
+    display: grid;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
 }
 
 .title{
@@ -31,19 +43,35 @@
     font-size: 4vh;
 }
 
+.code-box {
+    margin-left: 10px;
+    margin-right: 5vw;
+    position: relative;
+    padding-left: 2vw;
+    height: 65%;
+    background-color: hsl(0, 0%, 14%);
+    box-shadow: inset 0px 0px 8px hsl(0, 0%, 4%);
+    border-radius: 10px;
+    font-size: min(1.25vw, 2.25vh);
+    font-family: Space Mono;
+}
 
 @media (max-aspect-ratio: 10/9) {
     .home {
         padding: 0;
-        padding-top: -10vh;
         display: grid;
         justify-content: center;
         align-items: center;
         width: 100%;
+        height: 100%;
+        grid-template-columns: 1fr;
     }
 
     .title{
+        padding-top: 15vh;
         text-align: center;
+        padding-left: 10vw;
+        padding-right: 10vw;
     }
     
     .subtitle{
@@ -52,5 +80,10 @@
     
     .bio{
         text-align: center;
+    }
+
+    .code-box {
+        font-size: 2.5vw;
+        font-size: min(2.5vw, 2.25vh);
     }
 }

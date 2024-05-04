@@ -1,12 +1,23 @@
 @media (min-aspect-ratio: 10/9) {
     body{
         padding-left: 18%;
+        overflow: hidden;
+    }
+
+    .bg{
+        background: rgb(0,0,0);
+        background: linear-gradient(90deg, hsl(0, 0%, 14%) 0%, hsl(0, 0%, 25%) 100%);
     }
 }
 
 @media (max-aspect-ratio: 10/9) {
     body{
         padding-left: 0;
+    }
+
+    .bg{
+        background: rgb(0,0,0);
+        background: linear-gradient(180deg, hsl(0, 0%, 14%) 0%, hsl(0, 0%, 25%) 100%);
     }
 }
 
@@ -25,6 +36,4 @@ body{
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgb(0,0,0);
-    background: linear-gradient(135deg, hsl(0, 0%, 14%) 0%, hsl(0, 0%, 25%) 100%);
 }
