@@ -3,11 +3,11 @@
         position: fixed;
         display: grid;
         align-items: center;
-        background-color: hsl(0, 0%, 12%);
+        background-color: hsl(0, 0%, 13%);
         top: 0;
         left: 0;
         bottom: 0;
-        width: 8vw;
+        width: 10vw;
         height: 100%;
         box-shadow: inset 0px 0px 6px hsl(0, 0%, 3%);
     }
@@ -32,13 +32,26 @@
     .bar-segment-text{
         position: relative;
         font-weight: 400;
-        font-size: 1.75vw;
+        font-size: 1.5vw;
         text-decoration: none;
         transition: all .3s;
     }
     .bar-segment:hover {
         cursor: pointer;
         color: rgb(215,153,33)
+    }
+    .bar-segment-text::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 82%;
+        height: 2px;
+        bottom: 25%;
+        left: 0;
+        background-color: rgb(215,153,33);
+        transform: scaleX(0);
+        transform-origin: top left;
+        transition: transform 0.3s ease;
     }
 }  
 
@@ -54,7 +67,7 @@
     .bar-grid{
         position: relative;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         width: 100%;
         justify-content: center;
         align-items: center;
@@ -69,27 +82,26 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        font-size: 4vh;
+        font-size: 3vh;
     }
     .bar-segment:hover {
         cursor: pointer;
         color: rgb(215,153,33)
     }
+    .bar-segment-text::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 70%;
+        height: 2px;
+        bottom: 25%;
+        left: 15%;
+        background-color: rgb(215,153,33);
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+    }
 }
 
-.bar-segment-text::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 70%;
-    height: 2px;
-    bottom: 25%;
-    left: 0;
-    background-color: rgb(215,153,33);
-    transform: scaleX(0);
-    transform-origin: top left;
-    transition: transform 0.3s ease;
-  }
   
 .bar-segment-text:hover::before {
     transform: scaleX(1);
