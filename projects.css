@@ -171,9 +171,9 @@ body{
         font-size: 1.5vh;
         font-family: Space Mono;
         cursor: default;
-        -webkit-box-shadow:0px 0px 127px 3px rgba(142,192,124,0.15);
-        -moz-box-shadow: 0px 0px 127px 3px rgba(142,192,124,0.15);
-        box-shadow: 0px 0px 127px 3px rgba(142,192,124,0.15), inset 0px 0px 12px hsl(0, 0%, 4%);
+        -webkit-box-shadow:0px 0px 127px 10px rgba(142,192,124,0.25);
+        -moz-box-shadow: 0px 0px 127px 10px rgba(142,192,124,0.25);
+        box-shadow: 0px 0px 127px 10px rgba(142,192,124,0.25), inset 0px 0px 12px hsl(0, 0%, 4%);
         transition: all .5s;
     }
 }
@@ -309,9 +309,9 @@ body{
         font-size: 1.5vh;
         font-family: Space Mono;
         cursor: default;
-        -webkit-box-shadow:0px 0px 127px 3px rgba(142,192,124,0.15);
-        -moz-box-shadow: 0px 0px 127px 3px rgba(142,192,124,0.15);
-        box-shadow: 0px 0px 127px 3px rgba(142,192,124,0.15), inset 0px 0px 12px hsl(0, 0%, 4%);
+        -webkit-box-shadow:0px 0px 127px 6px rgba(142,192,124,0.2);
+        -moz-box-shadow: 0px 0px 127px 6px rgba(142,192,124,0.2);
+        box-shadow: 0px 0px 127px 6px rgba(142,192,124,0.2), inset 0px 0px 12px hsl(0, 0%, 4%);
         transition: all .5s;
     }
 
@@ -328,4 +328,16 @@ body{
         padding-right: 5vw;
         font-size: 1.75vh;
     }
+}
+
+.project-image {
+    -webkit-box-shadow:0px 0px 127px 8px rgba(215,153,33,0.15);
+    -moz-box-shadow: 0px 0px 127px 8px rgba(215,153,33,0.15);
+    box-shadow: 0px 0px 127px 8px rgba(215,153,33,0.15), inset 0px 0px 12px hsl(0, 0%, 4%);
+}
+
+.gallery-image {
+    -webkit-box-shadow:0px 0px 127px 8px rgba(142,192,124,0.2);
+    -moz-box-shadow: 0px 0px 127px 8px rgba(142,192,124,0.2);
+    box-shadow: 0px 0px 127px 8px rgba(142,192,124,0.2), inset 0px 0px 12px hsl(0, 0%, 4%);
 }
