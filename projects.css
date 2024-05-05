@@ -285,7 +285,7 @@ body{
 
     .project-image {
         width: 90%;
-        height: 95%;
+        height: 15vh;
         object-fit: cover;
         border-radius: 10px;
     }
