@@ -21,6 +21,7 @@
 }
 
 body{
+    overflow: hidden;
     margin: 0px;
     background-color: hsl(0, 0%, 15%);
     color: hsl(0, 0%, 90%);

@@ -261,7 +261,7 @@
 
     .gallery-image {
         width: 90%;
-        height: 95%;
+        height: 22vh;
         object-fit: cover;
         border-radius: 10px;
     }
