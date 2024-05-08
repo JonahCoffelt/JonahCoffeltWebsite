@@ -1,0 +1,44 @@
+.resume {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 90vw;
+    height: 100vh;
+}
+
+.pdf-container {
+    overflow: hidden;
+    position: relative;
+    height: 85%;
+    width: 85%;
+    border-radius: 20px;
+    -webkit-box-shadow:0px 0px 127px 12px rgba(142,192,124,0.15);
+    -moz-box-shadow: 0px 0px 127px 12px rgba(142,192,124,0.15), inset 0px 0px 6px hsl(0, 0%, 4%);
+}
+
+.pdf {
+    position: absolute;
+    left: 0;
+    top: -18%;
+    height: 117%;
+    width: 110%;
+}
+
+
+@media (max-aspect-ratio: 10/9) {
+    .resume {
+        width: 100vw;
+        height: 80vh;
+    }
+
+    .pdf-container{
+        width: 95%;
+    }
+
+    .pdf {
+        left: -5%;
+    }
+}
+

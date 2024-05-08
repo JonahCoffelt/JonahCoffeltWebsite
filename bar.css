@@ -2,22 +2,18 @@
     .bar{
         position: fixed;
         display: grid;
-        align-items: center;
+        align-items: top;
         background-color: hsl(0, 0%, 13%);
         top: 0;
         left: 0;
         bottom: 0;
         width: 10vw;
-        height: 100%;
         box-shadow: inset 0px 0px 6px hsl(0, 0%, 3%);
     }
     
     .bar-grid{
-        height: 65%;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        padding: 6px;
     }
     
     .bar-segment{
@@ -31,7 +27,7 @@
     .bar-segment-text{
         position: relative;
         font-weight: 400;
-        font-size: 1.5vw;
+        font-size: 1.3vw;
         text-decoration: none;
         transition: all .3s;
     }
