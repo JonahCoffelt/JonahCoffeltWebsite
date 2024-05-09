@@ -51,7 +51,7 @@ body{
         font-size: 2vw;
         font-weight: 400;
         color: rgb(142,192,124);
-        cursor: default;
+        cursor: pointer;
     }
 /*
     .project-name:hover .project-card{
