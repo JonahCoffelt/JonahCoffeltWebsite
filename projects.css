@@ -20,17 +20,20 @@ body{
     }
 
     .project-list {
-        width: 100%;
+        width: 80%;
+        padding-left: 5%;
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: center;
+        border-right: solid hsl(0, 0%, 90%) 2px;
+        
     }
 
     .project-name {
-        width: 80%;
+        width: 90%;
         height: 10vh;
-        padding-right: 4vw;
+        padding-right: 2vw;
         display: grid;
         justify-content: right;
         align-items: center;
