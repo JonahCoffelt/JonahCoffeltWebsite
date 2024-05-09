@@ -56,11 +56,11 @@
 @media (min-aspect-ratio: 8/9) {
     .gallery {
         height: 65vh;
-        width: 50vw;
-        grid-template-columns: 1fr 1fr;
+        width: 65vw;
+        grid-template-columns: 1fr 1fr 1fr;
     }
     .achievement-box {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         top: 35vh;
         left: 5vw;
         width: 90vw;
@@ -83,7 +83,7 @@
 
 @media (max-aspect-ratio: 8/9) {
     .project-card{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         width: 95%;
         left: 2.5%;
     }

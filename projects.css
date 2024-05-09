@@ -42,21 +42,22 @@ body{
         transition: all .3s;
     }
 
+    /*
     .project-list:hover .gallery-card{
         opacity: 0;
     }
-
+*/
     .project-name:hover {
         font-size: 2vw;
         font-weight: 400;
         color: rgb(142,192,124);
         cursor: default;
     }
-
+/*
     .project-name:hover .project-card{
         opacity: 100;
     }
-
+*/
     .gallery-card {
         position: absolute;
         pointer-events: none;
@@ -84,10 +85,17 @@ body{
     }
 
     .gallery-image {
+        position: relative;
+        pointer-events: visible;
+        cursor: pointer;
         width: 95%;
         height: 25vh;
         object-fit: cover;
         border-radius: 5px;
+    }
+
+    .gallery-image:hover {
+        opacity: 100%;
     }
 
     .project-card {
