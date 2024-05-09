@@ -21,11 +21,10 @@
 }
 
 .pdf {
-    position: absolute;
-    left: 0;
+    position: relative;
     top: -18%;
     height: 117%;
-    width: 110%;
+    width: 115%;
 }
 
 
