@@ -85,7 +85,7 @@ body{
 
     .gallery-image {
         width: 95%;
-        height: 95%;
+        height: 25vh;
         object-fit: cover;
         border-radius: 5px;
     }
