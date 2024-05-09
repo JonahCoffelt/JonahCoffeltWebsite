@@ -20,12 +20,18 @@
     width: 80%;
     margin: 5%;
     padding: 5%;
+    top: -5vh;
+    font-size: 2vh;
 }
 
-.achievement-info h1 {
+.ach-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
     padding: 0;
     margin: 0;
-    font-size: 5vh;
+    font-size: 2vw;
 }
 
 .achievement-info h2 {
@@ -33,7 +39,7 @@
     padding: 0;
     margin: 0;
     margin-top: -1.5vh;
-    font-size: 2vh;
+    font-size: 20vh;
     font-weight: 400;
 }
 
@@ -41,8 +47,10 @@
     text-align: left;
     padding: 0;
     margin: 0;
+    margin-top: 2vh;
     font-size: 2.6vh;
     font-weight: 300;
+    margin-bottom: -10vh;
 }
 
 @media (min-aspect-ratio: 8/9) {
@@ -97,5 +105,10 @@
     
     .achievement-info h3 {
         font-size: min(4vw, 2vh);
+        margin-top: 0;
+    }
+    .ach-title {
+        height: 5vh;
+        font-size: 2vh;
     }
 }
