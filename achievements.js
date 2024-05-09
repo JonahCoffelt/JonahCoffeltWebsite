@@ -23,10 +23,12 @@ function clear(){
     document.getElementById("c2").style.opacity = "0%";
     document.getElementById("c3").style.opacity = "0%";
     document.getElementById("g").style.opacity = "0%";
+    document.getElementById("g").style.pointerEvents = "none";
 }
 
 function reset() {
     clear()
+    document.getElementById("g").style.pointerEvents = "all";
     document.getElementById("g").style.opacity = "100%";
 }
 

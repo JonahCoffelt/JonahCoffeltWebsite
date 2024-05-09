@@ -38,10 +38,12 @@ function clear(){
     document.getElementById("c5").style.opacity = "0%";
     document.getElementById("c6").style.opacity = "0%";
     document.getElementById("g").style.opacity = "0%";
+    document.getElementById("g").style.pointerEvents = "none";
 }
 
 function reset() {
     clear()
+    document.getElementById("g").style.pointerEvents = "all";
     document.getElementById("g").style.opacity = "100%";
 }
 

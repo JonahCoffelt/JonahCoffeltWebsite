@@ -60,7 +60,6 @@ body{
 */
     .gallery-card {
         position: absolute;
-        pointer-events: none;
         opacity: 100;
         display: flex;
         top: 24%;
@@ -76,6 +75,7 @@ body{
     }
 
     .gallery {
+        pointer-events: all;
         display: grid;
         width: 100%;
         height: 100%;
@@ -86,7 +86,6 @@ body{
 
     .gallery-image {
         position: relative;
-        pointer-events: visible;
         cursor: pointer;
         width: 95%;
         height: 25vh;
