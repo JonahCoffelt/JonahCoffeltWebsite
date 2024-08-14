@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="bar.css">
         <link rel="stylesheet" href="projects.css">
         <link rel="stylesheet" href="achievements.css">
+        <link rel="stylesheet" href="modal.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
@@ -43,177 +44,206 @@
                 </a>
             </div>
         </div>
-        <div class="projects">
-            <div class="project-cards"></div>
-            <div class="project-list">
-                <div class="gallery-card">
-                    <div class="gallery" id="g">
-                        <img src="images\grad2.png" alt="" class="gallery-image" id="i1">
-                        <img src="images\prog.png" alt="" class="gallery-image" id="i2">
-                        <img src="images\band.png" alt="" class="gallery-image" id="i3">
+        <div class="achivements">
+            <div class="projects-title">
+                Achievements
+            </div>
+            <div class="achivements-cards-container">
+
+                <button data-modal-target="#project-1" class="project-button">
+                    <div class="project-card">
+                        <img src="images\grad2.png" alt="" class="project-img">
+                        <h1 class="project-name">Academics</h1>
+                    </div>
+                </button>
+
+                <button data-modal-target="#project-2" class="project-button">
+                    <div class="project-card">
+                        <img src="images\prog.png" alt="" class="project-img">
+                        <h1 class="project-name">Computer Science</h1>
+                    </div>
+                </button>
+
+                <button data-modal-target="#project-3" class="project-button">
+                    <div class="project-card">
+                        <img src="images\band.png" alt="" class="project-img">
+                        <h1 class="project-name">Band</h1>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div class="project-modal-container">
+            <div class="modal" id="project-1">
+                <div class="modal-header">
+                    <div class="modal-title">Academics</div>
+                    <button data-close-button class="close-modal-button">&times;</button>
+                </div>
+                <div class="achivement-modal">
+                    <div class="achievement-card">
+                        <div class="achievement-title">
+                            GPA
+                        </div>
+                        <div class="achievement-date">
+                            2019-Present
+                        </div>
+                        <div class="achievement-description">
+                            Maintained a 4.0 GPA throughout high school and current college semester. Graduated 5th in my high school class
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-title">
+                            International Baccalaureate
+                        </div>
+                        <div class="achievement-date">
+                            2022-2023
+                        </div>
+                        <div class="achievement-description">
+                            Earned an IB score of 39, the highest in the history of my high school
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-title">
+                            EH EDGE
+                        </div>
+                        <div class="achievement-date">
+                            2023-Present
+                        </div>
+                        <div class="achievement-description">
+                            Participated in the inaugural Engineering Honors EDGE cohort, a program focused on developing leaders in global engineering
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-title">
+                            Dean's Honor Roll
+                        </div>
+                        <div class="achievement-date">
+                            2023
+                        </div>
+                        <div class="achievement-description">
+                            Placed on the Dean's Honor Roll for the Fall semester of 2023
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-title">
+                            President's Endowed Scholarship
+                        </div>
+                        <div class="achievement-date">
+                            2023
+                        </div>
+                        <div class="achievement-description">
+                            Received the President's Endowed scholarship, the most competitive academic scholarship offered at A&M
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-title">
+                            Phi Eta Sigma
+                        </div>
+                        <div class="achievement-date">
+                            2024
+                        </div>
+                        <div class="achievement-description">
+                            Inducted into the Phi Eta Sigma honor society based on academic achievement
+                        </div>
                     </div>
                 </div>
-                <a class="project-name" id="b1">
-                    Academics
-                    <div class="project-card" id="c1">
-                        <div class="achievement-info">
-                            <div class="ach-title">
-                                GPA
-                            </div>
-                            <h2>
-                                2019-Present
-                            </h2>
-                            <h3>
-                                Maintained a 4.0 GPA throughout high school and current college semester, and graduated 5th in my high school class
-                            </h3>
-                        </div>
-                        <div class="achievement-info">
-                            <div class="ach-title">
-                                International Baccalaureate
-                            </div>
-                            <h2>
-                                2022-2023
-                            </h2>
-                            <h3>
-                                Earned an IB score of 39, the highest in the history of my high school
-                            </h3>
-                        </div>
-                        <div class="achievement-info">
-                            <div class="ach-title">
-                                EH EDGE
-                            </div>
-                            <h2>
-                                2023-Present
-                            </h2>
-                            <h3>
-                                Accepted into the inaugural Engineering Honors EDGE cohort, a program focused on developing leaders in global engineering
-                            </h3>
-                        </div>
-                        <div class="achievement-info">
-                            <div class="ach-title">
-                                Dean's Honor Roll
-                            </div>
-                            <h2>
-                                2023
-                            </h2>
-                            <h3>
-                                Placed on the Dean's Honor Roll for the Fall semester of 2023
-                            </h3>
-                        </div>
-                        <div class="achievement-info">
-                            <div class="ach-title">
-                                President's Endowed Scholarship
-                            </div>
-                            <h2>
-                                2023
-                            </h2>
-                            <h3>
-                                Received the President's Endowed scholarship, the most competitive academic scholarship offered at A&M
-                            </h3>
-                        </div>
-                        <div class="achievement-info">
-                            <div class="ach-title">
-                                Phi Eta Sigma
-                            </div>
-                            <h2>
-                                2024
-                            </h2>
-                            <h3>
-                                Inducted into the Phi Eta Sigma honor society based on academic achievement
-                            </h3>
-                        </div>
-                    </div>
-                </a>
-                <a class="project-name" id="b2">
-                    Computer Science
-                    <div class="project-card"  id="c2">
-                        <div class="achievement-info">
-                            <div class="ach-title">
-                                Texas Aggie Game Developers
-                            </div>
-                            <h2>
-                                2024
-                            </h2>
-                            <h3>
-                                Won "Best in Programming" at the TAGD 2024 Spring Game Jam
-                            </h3>
-                        </div>
-                        <div class="achievement-info">
-                            <div class="ach-title">
-                                Robomasters
-                            </div>
-                            <h2>
-                                2023-2024
-                            </h2>
-                            <h3>
-                                Accepted as a member in the A&M RoboMasters competitive organization on the computer vision team. 
-                            </h3>
-                        </div>
-                        <div class="achievement-info">
-                            <div class="ach-title">
-                                Pirate Software Game Jam
-                            </div>
-                            <h2>
-                                2024
-                            </h2>
-                            <h3>
-                                Place in top 10% of entries in the Theme and Artistic Style category
-                            </h3>
-                        </div>
-                    </div>
-                </a>
-                <a class="project-name" id="b3">
-                    Band
-                    <div class="project-card" id="c3">
-                        <div class="achievement-info">
-                            <div class="ach-title">
-                                District & Area
-                            </div>
-                            <h2>
-                                2020-2023
-                            </h2>
-                            <h3>
-                                District band member from 2020-2023 and area band member in 2023
-                            </h3>
-                        </div>
-                        <div class="achievement-info">
-                            <div class="ach-title">
-                                National Festival
-                            </div>
-                            <h2>
-                                2023
-                            </h2>
-                            <h3>
-                                Member of a chamber ensemble selected to perform at the Music for All National Festival 2023
-                            </h3>
-                        </div>
-                        <div class="achievement-info">
-                            <div class="ach-title">
-                                State Ensemble
-                            </div>
-                            <h2>
-                                2020-2023
-                            </h2>
-                            <h3>
-                                Advanced to state level in the UIL Solo & Ensemble competition 2020-2023
-                            </h3>
-                        </div>
-                        <div class="achievement-info">
-                            <h1>
-                                Section Leader
-                            </h1>
-                            <h2>
-                                2020-2023
-                            </h2>
-                            <h3>
-                                Clarinet section leader in the Magnolia High School Marching Band for three years
-                            </h3>
-                        </div>
-                    </div>
-                </a>
-                <a class="back project-name"></a>
-                <a class="project-name back" id="b4">Go Back</a>
             </div>
+
+            <div class="modal" id="project-2">
+                <div class="modal-header">
+                    <div class="modal-title">Computer Science</div>
+                    <button data-close-button class="close-modal-button">&times;</button>
+                </div>
+                <div class="achivement-modal">
+                    <div class="achievement-card">
+                        <div class="achievement-title">
+                            Texas Aggie Game Developers
+                        </div>
+                        <div class="achievement-date">
+                            2024
+                        </div>
+                        <div class="achievement-description">
+                            Won "Best in Programming" at the TAGD 2024 Spring Game Jam
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-title">
+                            Robomasters
+                        </div>
+                        <div class="achievement-date">
+                            2023-2024
+                        </div>
+                        <div class="achievement-description">
+                            Accepted as a member in the A&M RoboMasters competitive organization on the computer vision team
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-title">
+                            Pirate Software Game Jam
+                        </div>
+                        <div class="achievement-date">
+                            2024
+                        </div>
+                        <div class="achievement-description">
+                            Place in top 10% of entries in the Theme and Artistic Style category of the Pirate Software Game Jam
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal" id="project-3">
+                <div class="modal-header">
+                    <div class="modal-title">Band</div>
+                    <button data-close-button class="close-modal-button">&times;</button>
+                </div>
+                <div class="achivement-modal">
+                    <div class="achievement-card">
+                        <div class="achievement-title">
+                            District & Area
+                        </div>
+                        <div class="achievement-date">
+                            2020-2023
+                        </div>
+                        <div class="achievement-description">
+                            District band member from 2020-2023 and area band member in 2023
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-title">
+                            National Festival
+                        </div>
+                        <div class="achievement-date">
+                            2023
+                        </div>
+                        <div class="achievement-description">
+                            Member of a chamber ensemble selected to perform at the Music for All National Festival 2023
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-title">
+                            State Ensemble
+                        </div>
+                        <div class="achievement-date">
+                            2020-2023
+                        </div>
+                        <div class="achievement-description">
+                            Advanced to state level in the UIL Solo & Ensemble competition 2020-2023
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-title">
+                            Section Leader
+                        </div>
+                        <div class="achievement-date">
+                            2020-2023
+                        </div>
+                        <div class="achievement-description">
+                            Clarinet section leader in the Magnolia High School Marching Band for three years
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="overlay"></div>
         </div>
         <div class="profiles-bar">
             <div class="link-box" onclick="window.open('mailto:coffelt.jonah0918@gmail.com', '_blank');">
@@ -226,6 +256,6 @@
                 <img src="images\linkedin-white.png" class="link-img">
             </div>
         </div>
-        <script src="achievements.js"></script>
+        <script src="modal.js"></script>
     </body>
 </html>
